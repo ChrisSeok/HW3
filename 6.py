@@ -1,19 +1,25 @@
-6번 C135192 송이현
->>> x=int(input("첫 번째 정수: "))
-첫 번째 정수: 34
->>> y=int(input("두 번째 정수: "))
-두 번째 정수: 52
->>> z=int(input("세 번째 정수: "))
-세 번째 정수: 10
->>> if x<y<z
- print("중간값은 y이다.")
- else y<x<z
- print("중간값은 x이다.")
- else y<z<x
- print("중간값은 z이다.")
- else z<x<y
- print("중간값은 x이다.")
- else z<y<x
- print("중간값은 y이다.")
- else x<z<y
- print("중간값은 z이다.")
+#6번_B735042_김대겸
+
+#숫자 입력받기
+num_1 = int(input("숫자 1:"))
+num_2 = int(input("숫자 2:"))
+num_3 = int(input("숫자 3:"))
+medium_num = 0
+#중간 숫자 출력
+if (num_1 > num_2):
+    if (num_2 > num_3):
+        medium_num = num_2
+    else:
+        if (num_1 > num_3):
+            medium_num = num_3
+        else:
+            medium_num = num_1
+else:
+    if (num_2 < num_3):
+        medium_num = num_2
+    else:
+        if (num_1 > num_3):
+            medium_num = num_1
+        else:
+            medium_num = num_3
+print("중간값은 :",medium_num)

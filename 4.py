@@ -1,7 +1,10 @@
-#4번 C135192 송이현
->>> number = int(input("정수를 입력하시오: "))
-정수를 입력하시오: 4
->>> if((number %2 ==0 and number % 3 != 0)):
-    print(number,"찾는 정수가 아니다.)
-elif(number % 2 ==0 or number % 3==0)
-    print(number,"찾는 정수이다.)
+#4번_B735042_김대겸
+
+user_int = int(input("정수를 입력하시오: "))
+if (user_int % 2 == 0) or (user_int % 3 == 0):
+    if (user_int % 2 == 0) and (user_int % 3 == 0):
+        print("2와 3으로 동시에 나누어지는 수.")
+    else:
+        print("2또는 3으로 나누어지지만 2와 3으로 동시에 나누어지지는 않는 수.")
+else:
+    print("2또는 3으로 나누어지지 않는 수.")
